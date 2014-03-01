@@ -1,0 +1,2 @@
+#!/bin/sh
+./calm-forest daemon --listen http://*:$PORT --mode production
