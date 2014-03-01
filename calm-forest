@@ -17,7 +17,7 @@ __DATA__
 % title 'Welcome';
 <header><h1>Calm Forest</h1></header>
 <p>Welcome to the Mojolicious real-time web framework!</p>
-<p>The time is now <% DateTime->now() %></p>
+<p>The time is now <%= DateTime->now() %></p>
 <footer><p>Inspired by <a href="http://myfico.com">myfico.com</a></p><p><a href="http://unvisited.com">Unvisited</a></footer>
 
 @@ layouts/default.html.ep
@@ -29,7 +29,6 @@ __DATA__
   </head>
   <body><%= content %>
 <!-- AddThis Smart Layers BEGIN -->
-<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-531220e42ce608da"></script>
 <script type="text/javascript">
     addthis.layers({
