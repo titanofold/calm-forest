@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro|Cardo:400,400italic,700);
+
 /**
  * ethanschoonover.com master css file
  * fold in vim to view only the non html5boilerplate components
@@ -92,19 +94,19 @@ input, select {
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
 body {
-  font: 16px/1.231 sans-serif;
+  font: 16px/1.231 'Cardo', serif;
   *font-size: small;
 }
 
 /* Hack retained to preserve specificity */
 select, input, textarea, button {
-  font: 99% sans-serif;
+  font: 99% 'Cardo', serif;
 }
 
 /* Normalize monospace sizing:
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
 pre, code, kbd, samp {
-  font-family: monospace, sans-serif;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 /**
@@ -304,11 +306,11 @@ in pixels (px)  percent (%)
 26              197
 */
 html * {
-  font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+  font-family: 'Cardo', serif;
 }
 
 p {
-  font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+  font-family: 'Cardo', serif;
   font-weight: lighter;
   margin: 0 0 20px 0;
 }
@@ -334,7 +336,7 @@ dd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+  font-family: 'Cardo', serif;
   font-weight: lighter;
   text-transform: capitalize;
   margin-top: 40px;
@@ -446,7 +448,7 @@ pre {
 }
 
 pre, code {
-  font-family: monospace;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 /*code {
@@ -781,7 +783,7 @@ h1 a:hover, h2 a:hover {
 /* highlighting-kate */
 /* Based on kate's own default colors for Haskell */
 pre.sourceCode, table.sourceCode, table.sourceCode * {
-  font-family: monospace;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 code.sourceCode span.kw {
