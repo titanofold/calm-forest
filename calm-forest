@@ -1,4 +1,5 @@
 #!/usr/bin/env perl
+use v5.16;
 use Mojolicious::Lite;
 
 # Documentation browser under "/perldoc"
@@ -20,6 +21,9 @@ Welcome to the Mojolicious real-time web framework!
 @@ layouts/default.html.ep
 <!DOCTYPE html>
 <html>
-  <head><title><%= title %></title></head>
+  <head>
+    <title><%= title %></title>
+    %= stylesheet '/d.css'
+  </head>
   <body><%= content %></body>
 </html>
