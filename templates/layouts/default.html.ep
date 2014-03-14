@@ -18,7 +18,12 @@ ga('send', 'pageview');
 </head>
 <body>
 <%= content %>
-<footer><p>Inspired by <a href="http://myfico.com">myfico.com</a></p></footer>
+<footer>
+<p>Inspired
+by <a href="http://ficoforums.myfico.com/t5/Credit-Cards/The-GREAT-CC-Payoff-Challenge/td-p/2689987">myfico.com</a>.</p>
+<p>Report issues or contribute to this project
+on <a href="https://github.com/titanofold/calm-forest">GitHub</a>.</p>
+</footer>
 <!-- AddThis Smart Layers BEGIN -->
 %= javascript '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-531220e42ce608da'
 %= javascript begin
