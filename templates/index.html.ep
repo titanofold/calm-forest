@@ -3,4 +3,3 @@
 <header><h1>Calm Forest</h1></header>
 <p>Welcome to the Mojolicious real-time web framework!</p>
 <p>The time is now <%= DateTime->now() %></p>
-<footer><p>Inspired by <a href="http://myfico.com">myfico.com</a></p><p><a href="http://unvisited.com">Unvisited</a></footer>

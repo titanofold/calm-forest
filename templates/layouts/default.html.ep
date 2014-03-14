@@ -18,7 +18,7 @@ ga('send', 'pageview');
 </head>
 <body>
 <%= content %>
-
+<footer><p>Inspired by <a href="http://myfico.com">myfico.com</a></p></footer>
 <!-- AddThis Smart Layers BEGIN -->
 %= javascript '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-531220e42ce608da'
 %= javascript begin
