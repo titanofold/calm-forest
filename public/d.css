@@ -40,6 +40,41 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+/* j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+img {
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
+
+/* Customized to here */
+
 blockquote, q {
   quotes: none;
 }
@@ -101,12 +136,6 @@ body {
 /* Hack retained to preserve specificity */
 select, input, textarea, button {
   font: 99% 'Cardo', serif;
-}
-
-/* Normalize monospace sizing:
-   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
-pre, code, kbd, samp {
-  font-family: 'Anonymous Pro', monospace;
 }
 
 /**
@@ -220,37 +249,11 @@ input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* These selection declarations have to be separate
-   No text-shadow: twitter.com/miketaylr/status/12228805301
-   Also: hot pink! */
-::-moz-selection {
-  background: #FF5E99;
-  color: #fff;
-  text-shadow: none;
-}
-
-::selection {
-  background: #FF5E99;
-  color: #fff;
-  text-shadow: none;
-}
-
-/* j.mp/webkit-tap-highlight-color */
-a:link {
-  -webkit-tap-highlight-color: #FF5E99;
-}
-
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
 button {
   width: auto;
   overflow: visible;
-}
-
-/* Bicubic resizing for non-native sized IMG:
-   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-.ie7 img {
-  -ms-interpolation-mode: bicubic;
 }
 
 /**
